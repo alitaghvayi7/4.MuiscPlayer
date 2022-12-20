@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://kit.fontawesome.com/2c550ad0a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="music-palyer-container">
+        <div class="music-image-container">
+            <img src="img/jacinto-1.jpg" alt="">
+        </div>
+        <div class="music-details">
+            <h2 class="music-name">Electric Chill Machine</h2>
+            <h2 class="music-singer">Jacinto Design</h2>
+        </div>
+        <div class="music-controls">
+            <div class="music-top-controls">
+                <div class="music-timer-container">
+                    <div class="music-current-time">0:00</div>
+                    <div class="music-duration-time">2:06</div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="music-bottom-controls">
+                <button class="prev-button">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button class="play-pause-button">
+                    <i class="fa-solid fa-play"></i>
+                    <!-- <i class="fa-solid fa-pause" hidden></i> -->
+                </button>
+                <button class="next-button">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+        </div>
+        <audio src="music/jacinto-1.mp3" hidden class="music"></audio>
+    </div>
+</body>
+
+</html>
